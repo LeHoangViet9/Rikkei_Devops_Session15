@@ -1,0 +1,6 @@
+scrape_configs:
+  - job_name: 'microservices'
+    file_sd_configs:
+      - files:
+        - 'targets.json'
+        refresh_interval: 1m # (Tùy chọn) Thời gian Prometheus quét lại file, mặc định là 5m
